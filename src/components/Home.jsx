@@ -13,7 +13,7 @@ function Home() {
   return (
     <div className="hero">
       <div className="hero-content">
-        <h1>Find Your Dream Job 🚀</h1>
+        <h1>Find Your Dream Job Today🚀</h1>
 
         <div className="search-box">
           <input
