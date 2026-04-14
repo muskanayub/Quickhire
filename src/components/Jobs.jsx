@@ -27,33 +27,38 @@ function Jobs() {
 
   return (
     <div className="jobs">
-
-      {/* HEADER */}
       <h1 className="jobs-title">Explore Jobs 💼</h1>
 
-      {/* FILTERS */}
       <div className="filters">
         <button onClick={() => setFilter("Remote")}>Remote</button>
         <button onClick={() => setFilter("Full-Time")}>Full-Time</button>
         <button onClick={() => setFilter("")}>All</button>
       </div>
 
-      {/* JOB CARDS */}
       <div className="job-list">
         {filteredJobs.map((job) => (
           <div className="card" key={job.id}>
 
-            {/* CLICKABLE AREA */}
             <div
               className="card-content"
               onClick={() => navigate(`/job/${job.id}`)}
             >
               <div className="card-header">
-                <img
-                  src={job.logo}
-                  alt={job.company}
-                  className="company-logo"
-                />
+
+                {/* LOGO */}
+                {job.logo && (
+                  <img
+                    src={job.logo}
+                    alt={job.company}
+                    className="company-logo"
+                    onError={(e) => (e.target.style.display = "none")}
+                  />
+                )}
+
+                {/* INITIALS */}
+                <div className="company-avatar">
+                  {job.company.charAt(0)}
+                </div>
 
                 <div className="job-info">
                   <h3>{job.title}</h3>
@@ -67,7 +72,6 @@ function Jobs() {
               </div>
             </div>
 
-            {/* ACTION BUTTONS */}
             <div className="card-actions">
               <button
                 className="apply-btn"

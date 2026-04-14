@@ -11,8 +11,8 @@ function Navbar() {
       </h2>
 
       <div className="nav-center">
-        <span onClick={() => navigate("/jobs")}>Jobs</span>
         <span onClick={() => navigate("/")}>Home</span>
+        <span onClick={() => navigate("/jobs")}>Jobs</span>
       </div>
 
       <button className="nav-btn">Login</button>

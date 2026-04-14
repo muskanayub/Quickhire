@@ -96,6 +96,7 @@ body {
   background: white;
   color: #0A66C2;
   font-weight: bold;
+  cursor: pointer;
 }
 
 /* JOB PAGE */
@@ -256,4 +257,160 @@ body {
 
 .logo {
   cursor: pointer;
+}
+.company-logo {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  background: #fff;
+  padding: 6px;
+  border-radius: 8px;
+  border: 1px solid #eee;
+}
+/* SEARCH DROPDOWN */
+.search-box {
+  position: relative;
+  width: 350px;
+  margin: auto;
+}
+
+.suggestions {
+  position: absolute;
+  top: 60px;
+  width: 100%;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  z-index: 999;
+  overflow: hidden;
+  border: 1px solid #ddd;
+}
+
+.suggestion-item {
+  padding: 12px 15px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+  color: #222;
+  font-weight: 500;
+  background: white;
+}
+
+.suggestion-item:hover {
+  background: #f0f4ff;
+  color: #0A66C2;
+}
+
+/* AVATAR */
+.company-avatar {
+  width: 50px;
+  height: 50px;
+  background: #0A66C2;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+/* LOGO */
+.company-logo {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+/* TITLE */
+.jobs-title {
+  margin-bottom: 20px;
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+.job-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.details-card {
+  background: white;
+  padding: 40px;
+  width: 420px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* LOGO */
+.details-logo {
+  width: 70px;
+  margin-bottom: 10px;
+}
+
+/* AVATAR */
+.details-avatar {
+  width: 70px;
+  height: 70px;
+  background: #0A66C2;
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  border-radius: 10px;
+}
+
+/* TEXT */
+.details-info {
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.details-tag {
+  background: #e8f1ff;
+  color: #0A66C2;
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.details-desc {
+  margin: 15px 0;
+  color: #555;
+}
+
+/* BUTTONS */
+.details-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.apply-btn {
+  padding: 10px 20px;
+  border: none;
+  background: #0A66C2;
+  color: white;
+  border-radius: 5px;
+}
+
+.back-btn {
+  padding: 10px 20px;
+  border: 1px solid #0A66C2;
+  background: white;
+  color: #0A66C2;
+  border-radius: 5px;
+}
+
+/* SUCCESS */
+.success-msg {
+  margin-top: 15px;
+  color: green;
+  font-weight: bold;
 }
